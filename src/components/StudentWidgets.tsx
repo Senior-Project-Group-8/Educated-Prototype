@@ -25,7 +25,7 @@ export function Milestones() {
 export function Recommendations() {
   const errors = useStore((s) => s.errors); const views = useStore((s) => s.topicViews); const level = useStore((s) => s.level);
   const ranked = Object.entries(errors).sort((a, b) => b[1] - a[1]);
-  const topicFor = (why: string) => why.match(/exponent|like term/i) ? "Exponent rules" : why.match(/distribut|divide|order|coefficient|factor/i) ? "Linear equations" : "Integer arithmetic";
+  const topicFor = (why: string) => why.match(/exponent|like term|power rule/i) ? "Exponent rules" : why.match(/operand|carry|multiplied$|negative adds/i) ? "Integer arithmetic" : why.match(/distribut|divide|order of|coefficient|factor|constant/i) ? "Linear equations" : "Integer arithmetic";
   const recs = ranked.length ? ranked.slice(0, 3).map(([why, n]) => ({ topic: topicFor(why), why, n }))
     : [{ topic: ["Integer arithmetic", "Linear equations", "Exponent rules"][Math.min(2, Math.floor(level / 2))]!, why: "Matched to current cognitive level", n: 0 }];
   return (
