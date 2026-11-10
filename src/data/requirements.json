@@ -1,0 +1,798 @@
+[
+{
+"id": "R1",
+"desc": "Personal access to information regarding progress and learning status",
+"role": "Student",
+"features": [
+3
+]
+},
+{
+"id": "R2",
+"desc": "Personalized lesson plans allowing learning of desired specific content",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R3",
+"desc": "Monitoring student progress and creating required assignments/lessons",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R4",
+"desc": "Pedagogically optimized, interactive foundational learning modules for specific topics",
+"role": "Student",
+"features": [
+1,
+6
+]
+},
+{
+"id": "R5",
+"desc": "Parent portal access to help track and promote child educational engagement",
+"role": "Parent",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R6",
+"desc": "Provision of detailed feedback, student data viewing, and lesson creation",
+"role": "Teacher",
+"features": [
+3,
+4,
+5
+]
+},
+{
+"id": "R7",
+"desc": "Self-paced instructional modules providing automated learning feedback",
+"role": "Independent Learner",
+"features": [
+2,
+4
+]
+},
+{
+"id": "R8",
+"desc": "Administrative academic progress logs tracking grade-level skill compliance",
+"role": "Admin",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R9",
+"desc": "Dynamic difficulty scaling based on real-time task performance and accuracy",
+"role": "Student",
+"features": [
+1
+]
+},
+{
+"id": "R10",
+"desc": "Item Response Theory (IRT 4PL) model execution using exercise attributes",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R11",
+"desc": "Rapid difficulty adaptation using interaction discount factors on small datasets",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R12",
+"desc": "Automatic complexity reduction when answer accuracy falls below 60% threshold",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R13",
+"desc": "Cognitive scaffolding providing paths from lowest to highest cognitive levels",
+"role": "Student",
+"features": [
+1,
+4
+]
+},
+{
+"id": "R14",
+"desc": "Automated task generation matched to cognitive state via Adaptive Item Generator",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R15",
+"desc": "Algorithmic trajectory compilation based on user behavioral interaction analytics",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R16",
+"desc": "Self-paced topic selection driven by individual user performance baselines",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R17",
+"desc": "Personalized content recommendations based on platform interaction intensity",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R18",
+"desc": "Real-time system event logging for logins, active work time, and material views",
+"role": "System",
+"features": [
+3
+]
+},
+{
+"id": "R19",
+"desc": "Multi-level score visualizers displaying pre-test, post-test, and normalized gains",
+"role": "Student",
+"features": [
+3
+]
+},
+{
+"id": "R20",
+"desc": "Tracking timeliness of task submissions and test attempt counts",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R21",
+"desc": "Domain-specific conversational AI assistant for institutional inquiries",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R22",
+"desc": "System prompt restriction enforcing responses strictly within Markdown prompts",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R23",
+"desc": "Automated polite refusal of general, out-of-domain trivia queries",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R24",
+"desc": "Audio sound effects (pop sound, notification chime) during chat interactions",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R25",
+"desc": "Full-stack REST integration (Django, React, OpenAI API) for AI tutoring",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R26",
+"desc": "Real-time automated corrective feedback delivery upon problem completion",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R27",
+"desc": "Concept-based and question-specific hint generation for incorrect choices",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R28",
+"desc": "Early-Alert Predictor (EAP) flagging academic failure risk via behavior logs",
+"role": "Teacher",
+"features": [
+3,
+4,
+5
+]
+},
+{
+"id": "R29",
+"desc": "Instructor workspace to evaluate student outcomes and update curriculum",
+"role": "Teacher",
+"features": [
+6
+]
+},
+{
+"id": "R30",
+"desc": "Parent tracking portal to review engagement hours and learning success",
+"role": "Parent",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R31",
+"desc": "Centralized administrative logging for institutional compliance auditing",
+"role": "Admin",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R32",
+"desc": "Implementation of Adaptive Learning Game Design (ALGAE) framework",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R33",
+"desc": "Engagement reward mechanics and milestone tracking to eliminate boredom",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R34",
+"desc": "Smooth auto-scrolling UI navigation during real-time chatbot output",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R35",
+"desc": "Exercise difficulty generalization without requiring complex Knowledge Components",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R36",
+"desc": "Continuous tracking of student skill level across interactive sessions",
+"role": "Student",
+"features": [
+1,
+2
+]
+},
+{
+"id": "R37",
+"desc": "Multiple-choice distractor analysis for targeted concept failure identification",
+"role": "System",
+"features": [
+1,
+4
+]
+},
+{
+"id": "R38",
+"desc": "Automated capture of platform login frequency and total active session time",
+"role": "System",
+"features": [
+3
+]
+},
+{
+"id": "R39",
+"desc": "Content consumption logging to dynamically update recommendation weights",
+"role": "System",
+"features": [
+2
+]
+},
+{
+"id": "R40",
+"desc": "Automated suggestion pop-ups guiding users during problem solving",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R41",
+"desc": "Loading domain knowledge dynamically via localized .md prompt templates",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R42",
+"desc": "Instant feedback generation for complex or non-unique mathematical tasks",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R43",
+"desc": "Academic group and cohort progress segmentation for administrator review",
+"role": "Admin",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R44",
+"desc": "Real-time student progress data exports for instructor analysis",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R45",
+"desc": "Game-based mechanics designed to maximize active work time on platform",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R46",
+"desc": "Automatic difficulty scaling triggered after 3 to 5 user interactions",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R47",
+"desc": "Multi-role authenticated interface views (Student, Teacher, Parent, Admin)",
+"role": "System",
+"features": [
+6
+]
+},
+{
+"id": "R48",
+"desc": "Unconstrained self-directed learning paths independent of syllabus constraints",
+"role": "Independent Learner",
+"features": [
+2
+]
+},
+{
+"id": "R49",
+"desc": "Authoring tools for teachers to create custom assignments and lessons",
+"role": "Teacher",
+"features": [
+6
+]
+},
+{
+"id": "R50",
+"desc": "Dynamic content recommendations based on past error types and activity",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R51",
+"desc": "Automated capture of task execution speed and error accuracy metrics",
+"role": "System",
+"features": [
+3
+]
+},
+{
+"id": "R52",
+"desc": "Conversational assistance for course fees, registration, and deadlines",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R53",
+"desc": "Integration of Real-Time Feedback Engine (RFE) into active workspace",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R54",
+"desc": "Early warning alerts triggered by low login frequency or missed tasks",
+"role": "Teacher",
+"features": [
+3,
+4,
+5
+]
+},
+{
+"id": "R55",
+"desc": "Engagement monitoring tools facilitating home-based parental support",
+"role": "Parent",
+"features": [
+6
+]
+},
+{
+"id": "R56",
+"desc": "Administrative grade-level skill alignment verification across classes",
+"role": "Admin",
+"features": [
+6
+]
+},
+{
+"id": "R57",
+"desc": "Synthesis of game theories, pedagogical strategies, and adaptive models",
+"role": "System",
+"features": [
+7
+]
+},
+{
+"id": "R58",
+"desc": "Input validation and prompt submission handling in AI assistant interface",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R59",
+"desc": "Attribute-based difficulty rating assignment for new exercise items",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R60",
+"desc": "Adaptive trajectory execution shifting users from passive to active mode",
+"role": "Student",
+"features": [
+1,
+6
+]
+},
+{
+"id": "R61",
+"desc": "Cross-platform interaction logging across desktop and web application UI",
+"role": "System",
+"features": [
+3
+]
+},
+{
+"id": "R62",
+"desc": "Automated hint generation based on detected conceptual weaknesses",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R63",
+"desc": "System prompt temperature tuning (0.4) for precise, concise answers",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R64",
+"desc": "Maximum token ceiling enforcement (600 tokens) on AI text output",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R65",
+"desc": "Teacher dashboard visualizer displaying aggregate class metrics",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R66",
+"desc": "Recommended instructional intervention based on aggregate error trends",
+"role": "Teacher",
+"features": [
+2,
+5
+]
+},
+{
+"id": "R67",
+"desc": "Module attempt counts and retries logged automatically in system logs",
+"role": "System",
+"features": [
+3
+]
+},
+{
+"id": "R68",
+"desc": "Milestone achievement badges unlocked upon completing target trajectories",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R69",
+"desc": "Calibrated discount factor integration preventing difficulty oscillation",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R70",
+"desc": "Self-paced review modules providing feedback for independent skill building",
+"role": "Independent Learner",
+"features": [
+2,
+4
+]
+},
+{
+"id": "R71",
+"desc": "Domain-specific markdown prompt engineering for targeted tutoring",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R72",
+"desc": "Automated student failure risk classification via predictive analytics",
+"role": "Teacher",
+"features": [
+5
+]
+},
+{
+"id": "R73",
+"desc": "Flexible assignment distribution portal for custom teacher curricula",
+"role": "Teacher",
+"features": [
+6
+]
+},
+{
+"id": "R74",
+"desc": "Institutional administration portal for cross-cohort compliance logging",
+"role": "Admin",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R75",
+"desc": "Automatic task difficulty increase following consecutive correct responses",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R76",
+"desc": "Dynamic visual typing indicator displayed during AI response generation",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R77",
+"desc": "Operational step hints pop-ups (e.g., operational sign checks)",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R78",
+"desc": "Pre-test and post-test knowledge gain analysis for curriculum evaluation",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R79",
+"desc": "Parent dashboard alerts summarizing child milestone progress",
+"role": "Parent",
+"features": [
+6
+]
+},
+{
+"id": "R80",
+"desc": "Archived skill compliance verification logs for educational standards",
+"role": "Admin",
+"features": [
+6
+]
+},
+{
+"id": "R81",
+"desc": "Gamified learning progression mapped to ALGAE design guidelines",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R82",
+"desc": "Asynchronous API communication handling between React frontend and Django",
+"role": "System",
+"features": [
+4
+]
+},
+{
+"id": "R83",
+"desc": "IRT attribute refitting enabling robust operation on small datasets",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R84",
+"desc": "Content selection matched precisely to current measured cognitive state",
+"role": "Student",
+"features": [
+1,
+4
+]
+},
+{
+"id": "R85",
+"desc": "Detailed error logs available to instructors for curriculum improvement",
+"role": "Teacher",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R86",
+"desc": "Instant feedback generation during independent self-paced practice",
+"role": "Independent Learner",
+"features": [
+5
+]
+},
+{
+"id": "R87",
+"desc": "Real-time adaptive feedback tuning based on active performance metrics",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R88",
+"desc": "Domain-restricted Q&A assistant for institutional topic search",
+"role": "Student",
+"features": [
+4
+]
+},
+{
+"id": "R89",
+"desc": "Early warning alerts transmitted when active student time drops sharply",
+"role": "Teacher",
+"features": [
+5
+]
+},
+{
+"id": "R90",
+"desc": "Parent platform review showing active work hours and gain scores",
+"role": "Parent",
+"features": [
+3,
+5
+]
+},
+{
+"id": "R91",
+"desc": "Multi-semester grade-level skill log archiving for compliance audit",
+"role": "Admin",
+"features": [
+6
+]
+},
+{
+"id": "R92",
+"desc": "Interactive motivational rewards encouraging continuous task completion",
+"role": "Student",
+"features": [
+7
+]
+},
+{
+"id": "R93",
+"desc": "Modeling guess (c) and slip (d) parameters in 4PL IRT student model",
+"role": "System",
+"features": [
+1
+]
+},
+{
+"id": "R94",
+"desc": "Direct tutorial recommendations linked to specific concept weaknesses",
+"role": "Student",
+"features": [
+2
+]
+},
+{
+"id": "R95",
+"desc": "Automated real-time error detection during active exercise attempts",
+"role": "Student",
+"features": [
+5
+]
+},
+{
+"id": "R96",
+"desc": "Administrative progress logging for grade-level skill compliance tracking",
+"role": "Admin",
+"features": [
+3
+]
+}
+]

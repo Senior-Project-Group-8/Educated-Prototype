@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Prototype architecture
+- Front-end-only prototype: all state lives in `src/lib/store.ts` (in-memory, resets on reload) and sample data in `src/data/`; why: requirements demo without a backend.
+- Adaptive math (4PL IRT, DDA rules, risk, gain) lives in `src/lib/engine.ts` with tests in `engine.test.ts`; why: keeps rules verifiable and UI-independent.
+- `src/data/requirements.json` is parsed from the user's R1–R96 matrix; the Traceability page reads it directly.
