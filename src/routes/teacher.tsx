@@ -74,7 +74,7 @@ function Teacher() {
             <Bar dataKey="Pre" fill="var(--chart-2)" /><Bar dataKey="Post" fill="var(--chart-1)" /></BarChart></ResponsiveContainer></div>
         </Panel>
         <Panel title="Author assignment" tag="F6 · R49, R73">
-          <form className="space-y-2" onSubmit={(e) => { e.preventDefault(); if (!form.title || !form.due) return toast.error("Title and due date required");
+          <form className="space-y-2" onSubmit={(e) => { e.preventDefault(); if (!form.title || !form.due) { toast.error("Title and due date required"); return; }
             setAssignments((a) => [...a, form]); toast.success(`Assigned to ${form.cohort}`); setForm({ ...form, title: "" }); }}>
             <Input placeholder="Assignment title" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} />
             <div className="flex gap-2"><Input type="date" value={form.due} onChange={(e) => setForm({ ...form, due: e.target.value })} />

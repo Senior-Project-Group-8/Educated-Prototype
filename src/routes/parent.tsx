@@ -15,8 +15,8 @@ export const Route = createFileRoute("/parent")({
 });
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 function Parent() {
-  const kids = [STUDENTS[0], STUDENTS[1]];
-  const [id, setId] = useState(kids[0].id);
+  const kids = [STUDENTS[0]!, STUDENTS[1]!];
+  const [id, setId] = useState(kids[0]!.id);
   const k = kids.find((x) => x.id === id)!;
   const week = DAYS.map((d, i) => ({ d, hours: +((k.hours / 7) * (0.5 + Math.abs(Math.sin(i + k.pre)))).toFixed(1) }));
   const risk = riskLabel(riskScore(k));

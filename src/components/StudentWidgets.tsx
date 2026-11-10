@@ -27,7 +27,7 @@ export function Recommendations() {
   const ranked = Object.entries(errors).sort((a, b) => b[1] - a[1]);
   const topicFor = (why: string) => why.match(/exponent|like term/i) ? "Exponent rules" : why.match(/distribut|divide|order|coefficient|factor/i) ? "Linear equations" : "Integer arithmetic";
   const recs = ranked.length ? ranked.slice(0, 3).map(([why, n]) => ({ topic: topicFor(why), why, n }))
-    : [{ topic: ["Integer arithmetic", "Linear equations", "Exponent rules"][Math.min(2, Math.floor(level / 2))], why: "Matched to current cognitive level", n: 0 }];
+    : [{ topic: ["Integer arithmetic", "Linear equations", "Exponent rules"][Math.min(2, Math.floor(level / 2))]!, why: "Matched to current cognitive level", n: 0 }];
   return (
     <Panel title="Recommended for you" tag="F2 · R17, R39, R50, R94">
       <ul className="space-y-2">

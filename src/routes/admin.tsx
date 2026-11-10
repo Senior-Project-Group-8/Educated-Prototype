@@ -16,13 +16,13 @@ export const Route = createFileRoute("/admin")({
 });
 const TARGET = 75;
 function Admin() {
-  const [sem, setSem] = useState(SEMESTERS[2]);
+  const [sem, setSem] = useState(SEMESTERS[2]!);
   const cohorts = [...new Set(STUDENTS.map((s) => s.cohort))].map((c) => {
     const g = STUDENTS.filter((s) => s.cohort === c);
-    return { c, n: g.length, grade: g[0].grade, gain: g.reduce((a, s) => a + normalizedGain(s.pre, s.post), 0) / g.length, hours: g.reduce((a, s) => a + s.hours, 0) / g.length };
+    return { c, n: g.length, grade: g[0]!.grade, gain: g.reduce((a, s) => a + normalizedGain(s.pre, s.post), 0) / g.length, hours: g.reduce((a, s) => a + s.hours, 0) / g.length };
   });
-  const comp = COMPLIANCE[sem];
-  const met = SKILLS.filter((s) => comp[s.code] >= TARGET).length;
+  const comp = COMPLIANCE[sem]!;
+  const met = SKILLS.filter((s) => (comp[s.code] ?? 0) >= TARGET).length;
   return (
     <>
       <PageHead role="Administrator" title="Institutional oversight" sub="Audit grade-level skill compliance across cohorts and semesters. (R8, R31, R43, R56, R74, R80, R91, R96)" />
@@ -38,13 +38,13 @@ function Admin() {
         <Panel title="Skill compliance" tag="F6 · R56, R80">
           <div className="mb-3 flex gap-1">{SEMESTERS.map((s) => <Button key={s} size="sm" variant={s === sem ? "default" : "outline"} onClick={() => setSem(s)}>{s}</Button>)}</div>
           <ul className="space-y-3">{SKILLS.map((s) => (
-            <li key={s.code}><div className="flex justify-between text-sm"><span><span className="font-mono text-xs text-primary">{s.code}</span> {s.name}</span><span className={comp[s.code] >= TARGET ? "text-success" : "text-destructive"}>{comp[s.code]}%</span></div>
-              <div className="relative mt-1 h-2 rounded bg-muted"><div className={`h-2 rounded ${comp[s.code] >= TARGET ? "bg-success" : "bg-warning"}`} style={{ width: `${comp[s.code]}%` }} /><div className="absolute top-[-3px] h-3.5 w-0.5 bg-foreground" style={{ left: `${TARGET}%` }} /></div></li>))}</ul>
+            <li key={s.code}><div className="flex justify-between text-sm"><span><span className="font-mono text-xs text-primary">{s.code}</span> {s.name}</span><span className={(comp[s.code] ?? 0) >= TARGET ? "text-success" : "text-destructive"}>{(comp[s.code] ?? 0)}%</span></div>
+              <div className="relative mt-1 h-2 rounded bg-muted"><div className={`h-2 rounded ${(comp[s.code] ?? 0) >= TARGET ? "bg-success" : "bg-warning"}`} style={{ width: `${(comp[s.code] ?? 0)}%` }} /><div className="absolute top-[-3px] h-3.5 w-0.5 bg-foreground" style={{ left: `${TARGET}%` }} /></div></li>))}</ul>
         </Panel>
         <Panel title="Multi-semester archive" tag="F3 · R91, R96" className="lg:col-span-2">
           <Table><TableHeader><TableRow><TableHead>Skill</TableHead>{SEMESTERS.map((s) => <TableHead key={s}>{s}</TableHead>)}<TableHead>Trend</TableHead></TableRow></TableHeader>
-            <TableBody>{SKILLS.map((k) => <TableRow key={k.code}><TableCell className="font-mono text-xs">{k.code}</TableCell>{SEMESTERS.map((s) => <TableCell key={s}>{COMPLIANCE[s][k.code]}%</TableCell>)}<TableCell className="text-success">+{COMPLIANCE[SEMESTERS[2]][k.code] - COMPLIANCE[SEMESTERS[0]][k.code]} pts</TableCell></TableRow>)}</TableBody></Table>
-          <Button variant="outline" size="sm" className="mt-3" onClick={() => downloadCsv("compliance-archive.csv", SKILLS.map((k) => ({ code: k.code, skill: k.name, ...Object.fromEntries(SEMESTERS.map((s) => [s, COMPLIANCE[s][k.code]])) })))}>Export audit log</Button>
+            <TableBody>{SKILLS.map((k) => <TableRow key={k.code}><TableCell className="font-mono text-xs">{k.code}</TableCell>{SEMESTERS.map((s) => <TableCell key={s}>{COMPLIANCE[s]![k.code]}%</TableCell>)}<TableCell className="text-success">+{COMPLIANCE[SEMESTERS[2]!]![k.code]! - COMPLIANCE[SEMESTERS[0]!]![k.code]!} pts</TableCell></TableRow>)}</TableBody></Table>
+          <Button variant="outline" size="sm" className="mt-3" onClick={() => downloadCsv("compliance-archive.csv", SKILLS.map((k) => ({ code: k.code, skill: k.name, ...Object.fromEntries(SEMESTERS.map((s) => [s, COMPLIANCE[s]![k.code]])) })))}>Export audit log</Button>
         </Panel>
       </div>
     </>
